@@ -32594,6 +32594,7 @@ spec:
     - "--service-account-private-key-file=/etc/origin/master/serviceaccounts.private.key"
     - "--kubeconfig=/etc/origin/master/openshift-master.kubeconfig"
     - "--openshift-config=/etc/origin/master/master-config.yaml"
+    - "--feature-gates=DynamicProvisioningScheduling=true,VolumeScheduling=true"
     securityContext:
       privileged: true
     volumeMounts:
@@ -32848,6 +32849,7 @@ spec:
     - "--port=10251"
     - "--kubeconfig=/etc/origin/master/openshift-master.kubeconfig"
     - "--policy-config-file="
+    - "--feature-gates=DynamicProvisioningScheduling=true,VolumeScheduling=true"
     securityContext:
       privileged: true
     volumeMounts:

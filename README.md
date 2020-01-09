@@ -8,6 +8,12 @@ OKD: The Origin Community Distribution of Kubernetes
 [![Join the chat at freenode:openshift-dev](https://img.shields.io/badge/irc-freenode%3A%20%23openshift--dev-blue.svg)](http://webchat.freenode.net/?channels=%23openshift-dev)
 [![Licensed under Apache License version 2.0](https://img.shields.io/github/license/openshift/origin.svg?maxAge=2592000)](https://www.apache.org/licenses/LICENSE-2.0)
 
+```
+$ hack/update-generated-bindata.sh
+$ sudo apt-get install -y libkrb5-dev
+$ make all WHAT=cmd/oc GOFLAGS=-v
+```
+
 ***OKD*** is the Origin community distribution of [Kubernetes](https://kubernetes.io) optimized for continuous application development and multi-tenant deployment.  OKD adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. ***OKD*** is also referred to as ***Origin*** in github and in the documentation.
 
 [![Watch the full asciicast](docs/openshift-intro.gif)](https://asciinema.org/a/49402)
